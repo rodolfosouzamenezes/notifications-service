@@ -8,7 +8,7 @@ describe('Cancel Notification', () => {
     const notificationsRepository = new InMemoryNotificationsRepository();
     const cancelNotification = new CancelNotification(notificationsRepository);
 
-    const notification = makeNotification();
+    const notification = await makeNotification();
 
     await notificationsRepository.create(notification);
 
