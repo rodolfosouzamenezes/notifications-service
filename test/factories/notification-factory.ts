@@ -10,7 +10,7 @@ export function makeNotification(override: Override = {}) {
   return new Notification({
     category: 'social',
     content: new Content('Você recebeu uma solicitação de amizade'),
-    recipientId: 'example.recipient-id-1',
+    recipientId: 'example-recipient-id',
     ...override,
   });
 }
